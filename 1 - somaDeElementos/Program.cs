@@ -1,19 +1,18 @@
 ﻿using System;
 
-class Programa
+class MainClass
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
-        int A, B, SOMA;
+        string nome;
+        double salarioFixo, totalVendas, totalReceber;
 
-        Console.Write("Digite o valor de A: ");
-        A = int.Parse(Console.ReadLine());
+        nome = Console.ReadLine();
+        salarioFixo = double.Parse(Console.ReadLine());
+        totalVendas = double.Parse(Console.ReadLine());
 
-        Console.Write("Digite o valor de B: ");
-        B = int.Parse(Console.ReadLine());
+        totalReceber = salarioFixo + (totalVendas * 0.15);
 
-        SOMA = A + B;
-
-        Console.WriteLine("SOMA = " + SOMA);
+        Console.WriteLine("TOTAL = R$ " + totalReceber.ToString("F2"));
     }
 }

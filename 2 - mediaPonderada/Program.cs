@@ -1,23 +1,17 @@
 ﻿using System;
-using System.Net;
 
-class Programa
+class MainClass
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
-        double A, B, C, MEDIA;
+        double a, b, c, media;
 
-        Console.WriteLine("Digite a média da primeira matéria: ");
-        A = double.Parse(Console.ReadLine());
+        a = double.Parse(Console.ReadLine());
+        b = double.Parse(Console.ReadLine());
+        c = double.Parse(Console.ReadLine());
 
-        Console.WriteLine("Digite a média da segunda matéria: ");
-        B = double.Parse(Console.ReadLine());
+        media = ((a * 2) + (b * 3) + (c * 5)) / 10;
 
-        Console.WriteLine("Digite a média da terceira matéria: ");
-        C = double.Parse(Console.ReadLine());
-
-        MEDIA = ((A * 2) + (B * 3) + (C * 5)) / 100;
-
-        Console.WriteLine("MEDIA = " + MEDIA);
+        Console.WriteLine("MEDIA = " + media.ToString("F1"));
     }
 }
